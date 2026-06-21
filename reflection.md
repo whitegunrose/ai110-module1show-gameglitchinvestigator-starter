@@ -57,6 +57,7 @@ Document at least 3 bugs you found. Add rows as needed.
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+> Streamlit "reruns" and handles session state by keeping track of the current state of the game with a string variable. The values were `Win`, `Too High` or `Too Low`. The game keeps going as long as the state is not `Win`. The `new game` button will refresh the state of the game to a value other than `Win` and reset the amount of remaining attempts`.
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -65,3 +66,5 @@ Document at least 3 bugs you found. Add rows as needed.
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+> One habit or strategy I want to reuse in future labs and projects is to keep a `Bug Reproduction Log` that would be easy for AI to parse and understand. One thing I would do differently is work very incrementally with each bug and break it down into more bite sized tasks to digest the work easier. This project changed the way I think about AI generated code in how I view its authenticity. As long as we as developers are properly reviewing the code the AI is changing and truly understand why it is doing what it is, there is no problem with using AI.

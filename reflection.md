@@ -28,8 +28,6 @@ Document at least 3 bugs you found. Add rows as needed.
 |Normal |    Range 1-20     |   Range 1-50    |   Improper difficulty range   |
 |Normal |  8 max attempts   |   7 attempts    |   Improper difficulty attempts   |
 | Hard  |  5 max attempts   |   4 attempts    |   Improper difficulty attempts   |
-
-
 ---
 
 ## 2. How did you use AI as a teammate?
@@ -38,6 +36,9 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+> I strictly used Claude COde for this project. One example of an AI suggestion that was correct was to properly implement functions in `logic_utils.py`. The lack of implementations were pointed out to me once I had asked Claude to write tests for all of the bugs listed in the `Bug Reproduction Log` above. One example of an incorrect or misleading suggestion that Claude made was the improper handling of PATH commands on to run the pytests.
+
+> All of these changes and corrections were verified by ensuring the passing of all tests in `tests/test_game_logic.py`
 ---
 
 ## 3. Debugging and testing your fixes
@@ -47,6 +48,9 @@ Document at least 3 bugs you found. Add rows as needed.
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+> I decided that a bug was really fixed when the tests for that bug ran.
+> One test I ran with pytest was fixing the bounds for the input of `399`
+- AI helped me design and understand the tests based off of the bugs I logged in the `Bug Reproduction Log`
 ---
 
 ## 4. What did you learn about Streamlit and state?
